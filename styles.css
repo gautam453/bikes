@@ -1,0 +1,81 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    color: #ff4c29;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Bike Image */
+  .bike-display {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .bike-display img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 76, 41, 0.4);
+  }
+  
+  /* Specs Section */
+  .specs {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .specs h2 {
+    color: #ff4c29;
+    margin-bottom: 15px;
+  }
+  .specs ul {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .specs li {
+    margin-bottom: 8px;
+  }
+  button {
+    background-color: #ff4c29;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color: #e03e1a;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
