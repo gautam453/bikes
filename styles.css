@@ -1,0 +1,153 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header h1 {
+    font-size: 2.5rem;
+    color: #ff4c29;
+  }
+  header p {
+    font-size: 1.2rem;
+    color: #ccc;
+  }
+  
+  /* Bike Image */
+  .bike-display {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .bike-display img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 76, 41, 0.4);
+  }
+  
+  /* Specs Section */
+  .specs {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+  }
+  .specs h2 {
+    color: #ff4c29;
+    margin-bottom: 15px;
+  }
+  .specs ul {
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  .specs li {
+    margin-bottom: 8px;
+  }
+  button {
+    background-color: #ff4c29;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background-color: #e03e1a;
+  }
+  .hidden {
+    display: none;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  /* Add to existing styles.css or replace the previous one */
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Apply animation to header */
+  header {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Bike Image Animation */
+  .bike-display {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeInUp 1.2s ease-out;
+  }
+  .bike-display img {
+    max-width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 76, 41, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .bike-display img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px rgba(255, 76, 41, 0.6);
+  }
+  
+  /* Specs Section Animation */
+  .specs {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeInUp 1.4s ease-out;
+  }
+  
+  /* Extra Details Animation */
+  #extraDetails {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+  #extraDetails.show {
+    opacity: 1;
+    max-height: 300px;
+    margin-top: 10px;
+  }
+  
+  /* Button Hover */
+  button:hover {
+    background-color: #e03e1a;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
